@@ -8,6 +8,9 @@ use exercises::leap;
 use exercises::raindrops;
 use exercises::nth_prime;
 use exercises::bob;
+use exercises::beer_song;
+use exercises::proverb;
+use exercises::difference_of_squares;
 use chrono::*;
 
 fn main() {
@@ -24,4 +27,13 @@ fn main() {
     println!("{:?}", nth_prime::nth(4));
 
     println!("{}", bob::reply(""));
+
+    println!("{}", beer_song::sing(3, 0));
+    //    let list: Vec<&str> = vec!['nail', 'shoe', 'horse', 'war'];
+    let list: Vec<&str> = vec!["nail", "shoe", "horse", "war"];
+    println!("{}", proverb::build_proverb(list));
+
+    println!("{}", difference_of_squares::square_of_sum(100));
+    println!("{}", difference_of_squares::sum_of_squares(100));
+    println!("{}", difference_of_squares::difference(5));
 }
